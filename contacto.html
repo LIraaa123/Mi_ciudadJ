@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ciudad Juárez - Contacto y Encuesta</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #a02828;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            background-color: #333;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            display: inline-block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        nav a.activo {
+            background-color: #a02828;
+            font-weight: bold;
+        }
+        main {
+            width: 80%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border: 1px solid #ccc;
+        }
+        form {
+            background-color: #fafafa;
+            padding: 15px;
+            border: 1px solid #ddd;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #a02828;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        input[type="submit"]:hover {
+            background-color: #801f1f;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Encabezado -->
+    <header>
+        <h1>Contacto y Encuesta</h1>
+        <p>Regístrate o déjanos tu opinión sobre Ciudad Juárez</p>
+    </header>
+
+    <!-- Barra de Navegación -->
+    <nav>
+        <a href="index.html">Inicio</a>
+        <a href="atractivos.html">Atractivos</a>
+        <a href="gastronomia.html">Gastronomía</a>
+        <a href="contacto.html" class="activo">Contacto y Encuesta</a>
+    </nav>
+
+    <!-- Cuerpo -->
+    <main>
+        <h2>Formulario de Registro para Turistas</h2>
+        <form action="#" method="get">
+            
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre" required>
+
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+
+            <label for="origen">¿De dónde nos visitas?</label>
+            <input type="text" id="origen" name="origen" placeholder="Ciudad / Estado / País">
+
+            <label for="lugar">¿Cuál es tu lugar favorito de Juárez?</label>
+            <select id="lugar" name="lugar">
+                <option value="plaza-x">La Plaza de la X</option>
+                <option value="dunas">Dunas de Samalayuca</option>
+                <option value="catedral">Catedral de Ciudad Juárez</option>
+                <option value="bar-kentucky">Bar Kentucky Club</option>
+                <option value="otro">Otro</option>
+            </select>
+
+            <label for="comentarios">Comentarios o sugerencias:</label>
+            <textarea id="comentarios" name="comentarios" rows="4" placeholder="Déjanos un comentario..."></textarea>
+
+            <input type="submit" value="Enviar Datos">
+
+        </form>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>Sitio Web Creado para Proyecto Escolar - Ciudad Juárez 2026</p>
+    </footer>
+
+</body>
+</html>
